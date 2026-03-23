@@ -24,6 +24,7 @@ class HomePage extends StatelessWidget {
       ),
       body: Column(
         children: [
+          // 🔵 SALDO
           Container(
             width: double.infinity,
             padding: EdgeInsets.all(20),
@@ -31,10 +32,13 @@ class HomePage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Saldo Anda", style: TextStyle(color: Colors.white)),
+                Text(
+                  "Saldo Anda",
+                  style: TextStyle(color: Colors.white),
+                ),
                 SizedBox(height: 10),
                 Text(
-                  "Rp 10.000.000",
+                  "Rp 1.000.000",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 24,
@@ -47,6 +51,7 @@ class HomePage extends StatelessWidget {
 
           SizedBox(height: 20),
 
+          // 🔲 MENU
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
