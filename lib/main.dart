@@ -75,4 +75,3 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-Text("TEST BRIMO MAHRUS")
