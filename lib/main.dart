@@ -76,6 +76,63 @@ class HomePage extends StatelessWidget {
             ],
           ),
           SizedBox(height: 30),
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            padding: EdgeInsets.all(15),
+            decoration: BoxDecoration(
+              color: Colors.orange,
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Promo Hari Ini",
+                  style: TextStyle(color: Colors.white),
+                ),
+                Text(
+                  "Mulai",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height: 20),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Column(
+                  children: [
+                    Icon(Icons.phone_android),
+                    Text("Top Up"),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Icon(Icons.credit_card),
+                    Text("BRIZZI"),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Icon(Icons.receipt),
+                    Text("Tagihan"),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Icon(Icons.save),
+                    Text("Simpanan"),
+                  ],
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
