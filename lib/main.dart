@@ -22,13 +22,14 @@ class HomePage extends StatelessWidget {
         title: Text("BRImo"),
         backgroundColor: Colors.blue,
       ),
-      body: Column(
+        body: SingleChildScrollView(
+          child: Column(
         children: [
           // 🔵 SALDO
           Container(
             width: double.infinity,
             padding: EdgeInsets.all(20),
-            color: Colors.blue,
+            color: Colors.blue[700],
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -57,13 +58,29 @@ class HomePage extends StatelessWidget {
             children: [
               Column(
                 children: [
-                  Icon(Icons.send),
+                  Container(
+                    padding: EdgeInsets.all(6),
+                    decoration: BoxDecoration(
+                      color: Colors.blue[50],
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Icon(Icons.send, size: 20),
+                  ),
+                  SizedBox(height: 5),
                   Text("Transfer"),
                 ],
               ),
               Column(
                 children: [
-                  Icon(Icons.account_balance),
+                  Container(
+                    padding: EdgeInsets.all(6),
+                    decoration: BoxDecoration(
+                      color: Colors.blue[50],
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Icon(Icons.account_balance, size: 20),
+                  ),
+                  SizedBox(height: 5),
                   Text("BRIVA"),
                 ],
               ),
@@ -104,7 +121,7 @@ class HomePage extends StatelessWidget {
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Column(
                   children: [
@@ -135,6 +152,7 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
+        ),
     );
   }
 }
